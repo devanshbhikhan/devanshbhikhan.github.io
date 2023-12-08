@@ -31,6 +31,38 @@
     <section>
       <h2>Why Choose Chatomatic?</h2>
       <p>Our team of experts is dedicated to creating customized chatbot solutions that fit your unique business needs. We streamline customer interactions, boost efficiency, and help your business thrive in the digital age.</p>
+
+      <p>
+
+/*
+timmeeeeeeeeeeeeeeeeee
+
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.ZoneId;
+import java.time.Instant;
+
+public class TimeExample {
+
+    public static void main(String[] args) {
+        // Create a DateTimeFormatter
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+
+        // Convert a date string to milliseconds since the epoch
+        String dateString = "2023/12/07 12:00:00";
+        long milliseconds = LocalDateTime.parse(dateString, df)
+                            .atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+        System.out.println("Milliseconds since epoch: " + milliseconds);
+
+        // Convert milliseconds back to a date string
+        long millis = System.currentTimeMillis(); // Current time in milliseconds
+        LocalDateTime dateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(millis), ZoneId.systemDefault());
+        String formattedDate = dateTime.format(df);
+        System.out.println("Current date and time: " + formattedDate);
+    }
+}
+ */</p>
     </section>
   </main>
   
